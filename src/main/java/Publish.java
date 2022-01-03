@@ -47,6 +47,7 @@ public class Publish {
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"CASEFROMACTIVE\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"CASELOCK\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"CASEUNLOCK\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
+                    "{\"application\":\"MACYSWMS\",\"eventName\":\"CASEUNLOCK\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"lockCodes\":[\"PP\",\"DM\",\"LW\"],\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"INVUNLOCK\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"INVLOCK\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}]}",
                     "{\"application\":\"MACYSWMS\",\"eventName\":\"ADJUST\",\"locnNbr\":\"3950\",\"lgclLocnNbr\":\"6687\",\"reason\":\"RV\",\"containerBarcode\":\"00049111306595000501\",\"asn\":\"1233\",\"po\":\"3124910\",\"receipt\":\"124451\",\"items\":[{\"item\":\"4003683109219\",\"quantity\":10}],\"orderNumber\":101123}",
@@ -117,7 +118,7 @@ public class Publish {
                     publish(publisher, message, attributes);
                 }
             } else {
-                String message = messages.get(101 - 45);
+                String message = messages.get(50 - 45);
                 publish(publisher, message, attributes);
             }
             sleep(3);
